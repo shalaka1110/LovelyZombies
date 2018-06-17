@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class applyeyeliner : MonoBehaviour
 {
-    int vertexCount = 0;
+    int vertexCount;
     bool mouseDown = false;
     LineRenderer line;
     // Use this for initialization
 
     void Start()
     {
-
+        line = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        line = GetComponent<LineRenderer>();
+        
         if (Input.GetMouseButtonDown(0))
         {
             mouseDown = true;
@@ -25,7 +25,7 @@ public class applyeyeliner : MonoBehaviour
         if (mouseDown)
         {
             line.positionCount = vertexCount + 1;
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 15f));
             line.SetPosition(vertexCount, mousePos);
             vertexCount++;
         }

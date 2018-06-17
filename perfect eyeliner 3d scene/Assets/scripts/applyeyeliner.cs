@@ -25,7 +25,7 @@ public class applyeyeliner : MonoBehaviour
         if (mouseDown)
         {
             line.positionCount = vertexCount + 1;
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 15f));
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f));
             line.SetPosition(vertexCount, mousePos);
             vertexCount++;
             BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();

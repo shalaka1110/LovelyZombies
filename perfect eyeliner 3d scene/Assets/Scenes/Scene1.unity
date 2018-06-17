@@ -319,8 +319,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306392730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.61, z: 0}
-  m_LocalScale: {x: 1.75, y: 1.66, z: 1.78}
+  m_LocalPosition: {x: 0, y: 0.11, z: 5.63}
+  m_LocalScale: {x: 1.75, y: 1.840525, z: 1.78}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 1610600056}
   m_Layer: 0
   m_Name: line
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,9 +377,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  m_Positions: []
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.3
@@ -452,7 +450,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610600055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -467,7 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847676025}
   - component: {fileID: 1847676024}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ZombieSpawner
   m_TagString: ZombieSpawn
   m_Icon: {fileID: 0}
